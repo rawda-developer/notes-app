@@ -48,7 +48,7 @@ class NotesDeleteView(DeleteView):
 #     all_notes = Notes.objects.all()
 #     return render(request, 'notes/notes_list.html', {'notes': all_notes})
 
-# def detail(request, pk):
+# def detail(request, pk):reateView
 #     try:
 #         note = Notes.objects.get(pk=pk)
 #     except Notes.DoesNotExist:

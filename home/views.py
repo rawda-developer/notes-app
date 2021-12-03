@@ -16,7 +16,7 @@ class SignupView(CreateView):
     form_class = UserCreationForm
     template_name = 'home/register.html'
     success_url = 'smart/notes'
-
+    # handles GET requests
     def get(self, request, *args, **kwargs):
         if self.request.user.is_authenticated:
             return redirect('notes.list')
